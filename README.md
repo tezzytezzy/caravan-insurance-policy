@@ -1,7 +1,11 @@
-# caravan-insurance-policy
+# Caravan Insurance Policy
 
-**Data Set Information**
----
+## Synopsis
+
+Distinct classification models (Random Forest, Decision Tree, Ada Boost, and Gradient Boost) are applied and tested. This project starts with the standard training-and-validation set sampling ratio of 80:20. Cross-validation, out of bag scores (for well-randomized training and validation split), and grid search (for hyperparameter tuning) are deployed to reduce bias and error and make a generalized model, as samples are not time-sensitive (i.e., not time-series). While confusion matrix helps to assess granular improvement in the models, unpredictive features were eliminated through ranking of feature importance, correlation, and dendrogram.
+
+## Data Set Information
+
 Information about customers consists of 86 variables and includes product usage data and socio-demographic data derived from zip area codes. The data was supplied by the Dutch data mining company Sentient Machine Research and is based on a real world business problem. The training set contains over 5000 descriptions of customers, including the information of whether or not they have a caravan insurance policy. A test set contains 4000 customers of whom only the organisers know if they have a caravan insurance policy.
 
 The data dictionary (DICTIONARY.txt) describes the variables used and their values.
@@ -16,4 +20,5 @@ TICEVAL2000.txt: Dataset for predictions (4000 customer records). It has the sam
 
 TICTGTS2000.txt Targets for the evaluation set. 
 
-Details : [Insurance Company Benchmark (COIL 2000) Data Set](https://archive.ics.uci.edu/ml/datasets/Insurance+Company+Benchmark+%28COIL+2000%29)
+## Reference
+[Insurance Company Benchmark (COIL 2000) Data Set](https://archive.ics.uci.edu/ml/datasets/Insurance+Company+Benchmark+%28COIL+2000%29)
